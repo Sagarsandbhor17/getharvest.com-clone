@@ -1,10 +1,20 @@
 import React from 'react'
+import styled from 'styled-components'
+import BrowseOption from '../components/integration/BrowseOption'
+import SearchInt from '../components/integration/SearchInt'
+import TopIntegration from '../components/integration/TopIntegration'
 
+
+const Container = styled.div`
+  background-color: #fff8f1;
+`
 const Integration = () => {
   return (
-    <div>
-      <h1>Integration</h1>
-    </div>
+    <Container>
+      <TopIntegration />
+      <SearchInt />
+      <BrowseOption />
+    </Container>
   )
 }
 
