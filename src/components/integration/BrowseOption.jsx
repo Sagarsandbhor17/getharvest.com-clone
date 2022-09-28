@@ -22,10 +22,13 @@ const InfoContainer = styled.div`
 const Title = styled.h1`
     font-size: 40px;
     font-weight: 400;
+    text-align: left;
 `;
 const TitleSmall = styled.div`
     font-size: 30px;
     font-weight: 400;
+    text-align: left;
+
 `;
 const Button = styled.button`
     margin-top: 20px;
@@ -33,6 +36,8 @@ const Button = styled.button`
     font-size: 20px;
     border-radius: 10px;
     background-color: black;
+    display: flex;
+    justify-content: flex-start;
     color: white;
     cursor: pointer;
 
@@ -42,7 +47,7 @@ const Button = styled.button`
 `;
 const Line = styled.hr`
   width: 100%;
-  height: 0.5px;
+  height: 1px;
   background-color: red;
   color: red;
 `;
@@ -58,6 +63,8 @@ const BrowseOption = () => {
       </InfoContainer>
     </Container>
     <Line />
+    <br />
+    <br />
     </>
   );
 };

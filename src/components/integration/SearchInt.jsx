@@ -7,14 +7,14 @@ const Container = styled.div`
   background-color: #fff8f1;
   width: 90%;
   margin: auto;
-  padding: 70px 20px 150px 150px;
+  padding: 70px 20px 50px 100px;
   /* border: 2px solid red; */
 `;
 
 const InputContainer = styled.div`
   width: 90%;
   background-color: white;
-  height: 45px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,12 +71,13 @@ const FilterData = styled.div`
   flex: 3;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 25px;
   /* border: 1px solid black; */
 
   /* background-color: crimson; */
 `;
 const Line = styled.hr`
+margin: auto;
   width: 85%;
   height: 0.5px;
   background-color: red;

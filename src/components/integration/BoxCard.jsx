@@ -23,8 +23,11 @@ const Image = styled.img`
 const Title = styled.h1`
   font-size: 24px;
   font-weight: 500;
+  text-align: left;
 `;
-const Desc = styled.div``;
+const Desc = styled.div`
+  text-align: left;
+`;
 
 const BoxCard = ({ item }) => {
   return (

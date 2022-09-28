@@ -23,11 +23,14 @@ const TopText = styled.h1`
   font-weight: 370;
   line-height: 60px;
   letter-spacing: 1px;
+  text-align: left;
 `;
 const Text = styled.div`
   font-size: 31px;
   font-weight: 350;
   letter-spacing: 1px;
+  text-align: left;
+
 `;
 const Right = styled.div`
   flex: 1;
