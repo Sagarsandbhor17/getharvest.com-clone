@@ -1,11 +1,11 @@
-
-import Integration from './Pages/Integration';
-
+import logo from './logo.svg';
+import './App.css';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
-     <Integration />
+    <div >
+      <Footer />
     </div>
   );
 }
