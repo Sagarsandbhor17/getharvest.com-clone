@@ -1,0 +1,45 @@
+.font{
+font-size:60px ;
+color:#1D1E1C ;
+font-family:Arial, Helvetica, sans-serif;
+text-align:left;
+line-height:70px;
+}
+.subfont{
+    font-size:18px;
+    text-align: left;
+    color:#6D6E6D
+}
+.feat{
+    text-align:left;
+    width:60%;
+}
+.feat:hover{
+    color:#FA5D00;
+}
+
+.featBox{
+    padding:20px;
+    border:1px solid #FA5D00;
+    width:90%;
+    border-radius:1rem;
+    
+}
+.featBox:hover{
+    background-color:#fee8d8;
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px){
+   .font{font-size:40px ;
+    color:#1D1E1C ;
+    width:90%;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:left;
+    line-height:60px;} 
+    .subfont{
+        font-size:18px;
+        text-align:left;
+        width:80%;
+    }
+}
