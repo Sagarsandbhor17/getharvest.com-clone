@@ -1,0 +1,12 @@
+.colorChange{
+    background-color:white;
+}
+.navbar{
+    background:transparent;
+}
+.vl {
+    border-left: 1px solid gray;
+    height: 40px;
+  }
+  .logo{display: "inline-block";width:"40px";margin:"auto";margin-right:"0" }
+  
