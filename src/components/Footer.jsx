@@ -1,6 +1,10 @@
 import React from "react";
 import styles from "./Footer.module.css";
-import harvestlogo from "../kundanmedia/harvest_logo.png"
+import harvestlogo from "../kundanmedia/harvest_logo.png";
+import { BsTwitter } from 'react-icons/bs';
+import { BsLinkedin } from 'react-icons/bs';
+import {BsInstagram} from 'react-icons/bs';
+
 
 const Footer = () => {
   return (
@@ -13,6 +17,7 @@ const Footer = () => {
       <div className={styles.fmain2}>
         <div className={styles.frow1}>
           <h2>Harvest</h2>
+          <br/>
           <div className={styles.fh3}>
           <h3>Home</h3>
           <h3>Why Harvest?</h3>
@@ -26,6 +31,7 @@ const Footer = () => {
 
         <div className={styles.frow1}>
         <h2>Community</h2>
+        <br/>
           <div className={styles.fh3}>
           <h3>Customer stories</h3>
           <h3>Resources</h3>
@@ -38,6 +44,7 @@ const Footer = () => {
         </div>
         <div className={styles.frow1}>
         <h2>Company</h2>
+        <br/>
           <div className={styles.fh3}>
           <h3>About us</h3>
           <h3>Blog</h3>
@@ -66,13 +73,13 @@ const Footer = () => {
         </div>
         <div className={styles.part2_2}>
           <div>
-            <h3>Twitter </h3>
+            <h3 className={styles.part2_2_h3}> <BsTwitter/>Twitter </h3>
           </div>
           <div>
-            <h3> LinkedIn </h3>
+            <h3 className={styles.part2_2_h3}><BsLinkedin/> LinkedIn </h3>
           </div>
           <div>
-            <h3>  Instagram</h3>
+            <h3 className={styles.part2_2_h3}> <BsInstagram/> Instagram</h3>
           </div>
 
         </div>
