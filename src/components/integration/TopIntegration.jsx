@@ -2,8 +2,8 @@ import styled from "styled-components";
 import circleImg from "../../kiranmedia/circle.png"
 const Container = styled.div`
   margin: auto;
-  height: 80vh;
-  width: 90%;
+  height: 70vh;
+  /* width: 90%;/ */
   padding: 20px;
   display: flex;
   justify-content: center;
