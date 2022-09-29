@@ -32,10 +32,11 @@ const Timetracking = () => {
         <div className={style.box1text}>
             <h3>An intuitive, lightweight time tracking experience that’s easy to adopt and use every day.</h3>
         </div>
-        <Button  colorScheme='orange' size='lg'>
+        <Button variant="solid" colorScheme='orange' size='lg'>
    Start your free trial
   </Button>
         </div>
+   
         <div className={style.timetrackingBox2}>
 <img src={img} alt="time"/>
         </div>
