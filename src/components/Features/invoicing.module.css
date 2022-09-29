@@ -1,28 +1,28 @@
-.reportContainer{
+.timetrackingContainer{
     width:100%;
     height: 500px;
     border: 1px solid red;
     display: flex;
     padding-top: 50px;
 }
-.reportBox1{
+.timetrackingBox1{
     width:40%;
     border: 1px solid blue;
     padding-top: 110px;
     text-align: start;
     /* padding-left: 10%; */
 }
-.reportBox1>h3{
+.timetrackingBox1>h3{
   font-size: 42px;
   line-height: 50px;
   color: #fa5d00;
   font-weight: 400;
 }
-.reportBox2{
+.timetrackingBox2{
     width:60%;
     border: 1px solid green;
 }
-.reportBox2>img{
+.timetrackingBox2>img{
     width:100%;
     border-radius: 16px;
 }
@@ -32,14 +32,12 @@ font-weight: 500;
     line-height: 28px;
     width:70%
 }
-/* .reportContainer2{
+.timetrackingContainer2{
     width:30%;
     /* border:1px solid green; */
-    /* height:auto;
-   
- 
+    height:auto;
   
-} */ 
+}
 .container2box1{
     display: flex;
     width:100%
@@ -64,17 +62,12 @@ font-weight: 500;
    font-weight: 400;
  }
  .container2{
-      /* display:flex; */
-    /* width:100%;  */
-   
-   /* justify-content: space-evenly;  */
-   display: grid;
-   grid-template-columns: auto auto auto ;
-    grid-template-rows: auto auto;
-    grid-gap: 10px;
+    display: flex;
+    width:100%;
+   justify-content: space-evenly;
  }
  .container2box1img{
-    width:20%;
+    width:30%;
  }
  .container2box1img>img{
     padding-top: 20px;
@@ -89,34 +82,32 @@ font-weight: 500;
       padding-bottom: 5%;
  }
  .container3box1{
-    width:30%
+    width:60%
  }
- .container3box1>img{
-    width:100%;
-    border-radius: 16px;
+ .container3box1>h3{
+   font-size: 42px;
+   line-height: 50.4px;
+   font-weight: 400;
+ }
+ .container3box1text>h3{
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 39px;
+    width: 90%;
+ }
+ .container3box2>img{
+    width:80%;
+  
 
  }
  .container3box2{
-    width:70%;
+    width:40%;
     padding-left: 20px;
  }
- .container3box2text>h3{
-    font-size: 30px;
-    line-height: 45px;
-    font-weight: 400;
+ .container3innerbox{
+    display: flex;
  }
- .container3box2text{
-    text-align: start;
+ .container3innerbox>h3{
+   font-weight: 400;
  }
- .container3box2text>h4{
-    font-size: 20px;
-    line-height: 28px;
-   
- }
- .container3box2text>h5{
-    font-size: 20px;
- margin-top: -15px;
-   font-weight: 600;
-   line-height: 28px;
-   
- }
+ 
