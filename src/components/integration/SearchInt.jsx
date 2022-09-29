@@ -10,7 +10,9 @@ const Container = styled.div`
   margin: auto;
   margin-top: 120px;
   padding-bottom: 50px;
-  ${mobile({ width: "90%" })}
+  ${mobile({ width: "100%" })}
+  /* border: 1px solid black; */
+
   
   /* margin-bottom: 50px; */
 
@@ -58,6 +60,8 @@ const FilterContainer = styled.div`
   padding: 10px;
   padding-left: 20px;
   margin-top: 50px;
+  ${mobile({  paddingLeft: "0",padding: "5px" })}
+
 `;
 const FilterCategory = styled.div`
   flex: 1;
@@ -91,10 +95,10 @@ const FilterData = styled.div`
   flex: 3;
   display: flex;
   flex-wrap: wrap;
-  gap: 25px;
-  ${mobile({ gap: "15px",width:"100%",})}
-
+  gap: 20px;
   /* border: 1px solid black; */
+  ${mobile({ gap: "10px",width:"100%",})}
+
 
   /* background-color: crimson; */
 `;
