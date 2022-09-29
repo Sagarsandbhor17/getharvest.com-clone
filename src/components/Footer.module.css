@@ -73,6 +73,7 @@
   .frow1 h2{
     text-align: center;
     color: #ffff;
+    font-weight: bold;
 
   }
   /* .frow1 h3{
@@ -83,8 +84,8 @@
   } */
   .fh3{
     /* border:1px solid lime; */
-    width:160px;
-    padding-left: 50px; 
+    width:200px;
+    padding-left: 65px; 
     margin: auto;
     text-align: left;
    
@@ -95,6 +96,7 @@
     color: #ffff;
     margin-bottom: 10px;
     font-size: 16px;
+    font-weight: bold;
     
   }
   .fh3>h3:hover{
@@ -149,7 +151,10 @@
     width:20%;
   }
   .part2_1 h3{
-    color: #ffff;
+    color: grey;
+    font-weight: bold;
+    font-size: 19px;
+    cursor: pointer;
   }
   .part2_2{
     /* border: 2px solid gold; */
@@ -161,13 +166,22 @@
 
   }
   .part2_2 h3{
-    color: #ffff;
+    color: gray;
+    font-size: 20px;
+    font-weight: bold;
 
   }
   .part2_2 h3:hover{
     color: orangered;
     cursor: pointer;
 
+  }
+  .part2_2_h3{
+    /* border:  1px solid lime; */
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
  
   
@@ -208,6 +222,15 @@
     }
     .part2_1{
         width: 100%;
+        /* border: 1px solid gold; */
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+    }
+    .part2_1>h3{
+      text-align: center;
+      padding-left: 60px;
+
     }
     .part2_2{
         width: 100%;

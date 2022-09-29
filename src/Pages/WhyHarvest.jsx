@@ -1,9 +1,13 @@
 import React from 'react'
 
+import { Helpteam } from '../components/Whyharvest/Helpteam'
+
+
 const WhyHarvest = () => {
   return (
     <div>
-      <h1>WhyHarvest</h1>
+      <Helpteam/>
+    
     </div>
   )
 }
