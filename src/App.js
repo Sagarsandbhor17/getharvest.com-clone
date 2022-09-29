@@ -1,4 +1,4 @@
-import "./App.css";
+import './App.css';
 import { Allroute } from "./components/Allroute";
 import Navbar from "./components/Navbar";
 function App() {
