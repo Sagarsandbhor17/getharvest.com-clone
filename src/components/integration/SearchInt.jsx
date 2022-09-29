@@ -2,43 +2,26 @@ import styled from "styled-components";
 import { integrateData } from "../../kirandata";
 import searchImg from "../../kiranmedia/searchIcon.png";
 import BoxCard from "./BoxCard";
-import { mobile } from "./IntegrationResponsive";
 
 const Container = styled.div`
   background-color: #fff8f1;
   width: 90%;
   margin: auto;
-  margin-top: 120px;
-  padding-bottom: 50px;
-  ${mobile({ width: "100%" })}
-  /* border: 1px solid black; */
-
-  
-  /* margin-bottom: 50px; */
-
-  /* padding: 70px 20px 50px 100px; */
+  padding: 70px 20px 50px 100px;
   /* border: 2px solid red; */
 `;
 
 const InputContainer = styled.div`
-  width: 95%;
-  margin: auto;
+  width: 90%;
   background-color: white;
   height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #272727de;
+  border: 1px solid black;
   border-radius: 10px;
   overflow: hidden;
   padding: 10px;
-
-  &:hover{
-  border: 1px solid #fa5d00;
-
-  }
-  ${mobile({ width: "90%" })}
-
 `;
 const Logo = styled.img``;
 const Input = styled.input`
@@ -49,26 +32,19 @@ const Input = styled.input`
   padding-left: 10px;
   border: none;
   outline: none;
-  ${mobile({ fontSize: "16px" })}
-
 `;
 
 const FilterContainer = styled.div`
-  /* width: 90%; */
+  width: 90%;
   display: flex;
   /* border: 1px solid black; */
   padding: 10px;
-  padding-left: 20px;
   margin-top: 50px;
-  ${mobile({  paddingLeft: "0",padding: "5px" })}
-
 `;
 const FilterCategory = styled.div`
   flex: 1;
   /* background-color: blue; */
   padding: 10px;
-  ${mobile({ display: "none" })}
-
 `;
 const Button = styled.button`
   display: flex;
@@ -95,21 +71,17 @@ const FilterData = styled.div`
   flex: 3;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 25px;
   /* border: 1px solid black; */
-  ${mobile({ gap: "10px",width:"100%",})}
-
 
   /* background-color: crimson; */
 `;
 const Line = styled.hr`
-  margin: auto;
+margin: auto;
   width: 85%;
-  height: 1px;
+  height: 0.5px;
   background-color: red;
   color: red;
-  ${mobile({width:"100%" })}
-
 `;
 const SearchInt = () => {
   return (

@@ -26,19 +26,19 @@ export const integrateData = [
       {
         id: 5,
         img: "https://www.getharvest.com/hs-fs/hubfs/integrations-new/trello.png?width=300&name=trello.png",
-        title: "Trello",
+        title: "GitHub",
         desc: "Track time to Harvest without leaving Trello",
       },
       {
         id: 6,
         img: "https://www.getharvest.com/hs-fs/hubfs/integrations-new/qbo.png?width=300&name=qbo.png",
-        title: "QuickBook",
+        title: "GitHub",
         desc: "Seamlessly copy Harvest invoices to QuickBooks Online",
       },
       {
         id: 7,
         img: "https://www.getharvest.com/hs-fs/hubfs/integrations-new/xero.png?width=300&name=xero.png",
-        title: "Xero",
+        title: "GitHub",
         desc: "Automatically copy Harvest invoices to Xero",
       },
       {
@@ -119,6 +119,4 @@ export const integrateData = [
         title: "Chrome",
         desc: "Track time to Harvest from the Chrome toolbar.",
       },
-    
-      
 ]

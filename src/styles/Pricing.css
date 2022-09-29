@@ -1,0 +1,79 @@
+.price_main_container{
+    margin-top: 60px;
+}
+
+.price_top_div{
+    width: 20%;
+    margin: auto;
+    padding: 2rem;
+}
+.price_top_div h1{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+.price-toggle_div{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 0.5rem;
+}
+.price-toggle_div h5{
+    font-size: 1.5rem; 
+}
+
+.price_bottom_div{
+    /* border: 1px solid; */
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+}
+.price_bottom_div>div{
+    border: 1px solid orangered;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 3rem;
+    width: 40%;
+    
+}
+.heading_div{
+    /* border: 1px solid; */
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+}
+.price_heading_div{
+    text-align: left;
+}
+.price_heading_div h1{
+    margin-bottom: 1rem;
+    color: orangered;
+    font-size: 2rem;
+}
+.price_heading_div p{
+    margin-top: 0.2rem;
+    font-weight: bold;
+}
+.price_mentioned_div h5{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.price_mentioned_div h6{
+ color: grey;
+ 
+}
+.button_div button{
+    margin-top: 1rem;
+    width: 90%;
+    border-radius: 15px;
+    padding: 0.5rem;
+    background-color: rgb(1, 58, 1);
+    color: white;
+}
+.button_div  h6{
+    color: rgb(73, 72, 72);
+    margin-top: 5px;
+   }
