@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { mobile } from "./IntegrationResponsive";
 
 const Container = styled.div`
   /* border: 1px solid black; */
@@ -11,7 +12,7 @@ const Container = styled.div`
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s ease;
-
+  ${mobile({})}
 
   &:hover {
     background-color: #d8d2c9;

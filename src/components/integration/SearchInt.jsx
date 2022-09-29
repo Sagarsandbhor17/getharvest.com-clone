@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { integrateData } from "../../kirandata";
 import searchImg from "../../kiranmedia/searchIcon.png";
 import BoxCard from "./BoxCard";
+import { mobile } from "./IntegrationResponsive";
 
 const Container = styled.div`
   background-color: #fff8f1;
@@ -9,6 +10,8 @@ const Container = styled.div`
   margin: auto;
   margin-top: 120px;
   padding-bottom: 50px;
+  ${mobile({ width: "90%" })}
+  
   /* margin-bottom: 50px; */
 
   /* padding: 70px 20px 50px 100px; */
@@ -23,11 +26,17 @@ const InputContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
+  border: 1px solid #272727de;
   border-radius: 10px;
   overflow: hidden;
   padding: 10px;
-  
+
+  &:hover{
+  border: 1px solid #fa5d00;
+
+  }
+  ${mobile({ width: "90%" })}
+
 `;
 const Logo = styled.img``;
 const Input = styled.input`
@@ -38,6 +47,8 @@ const Input = styled.input`
   padding-left: 10px;
   border: none;
   outline: none;
+  ${mobile({ fontSize: "16px" })}
+
 `;
 
 const FilterContainer = styled.div`
@@ -52,6 +63,8 @@ const FilterCategory = styled.div`
   flex: 1;
   /* background-color: blue; */
   padding: 10px;
+  ${mobile({ display: "none" })}
+
 `;
 const Button = styled.button`
   display: flex;
@@ -79,6 +92,8 @@ const FilterData = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
+  ${mobile({ gap: "15px",width:"100%",})}
+
   /* border: 1px solid black; */
 
   /* background-color: crimson; */
@@ -89,6 +104,8 @@ const Line = styled.hr`
   height: 1px;
   background-color: red;
   color: red;
+  ${mobile({width:"100%" })}
+
 `;
 const SearchInt = () => {
   return (

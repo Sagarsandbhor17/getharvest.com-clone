@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from "styled-components";
+import { mobile } from "./IntegrationResponsive";
 
 const Container = styled.div`
   background-color: #fff;
@@ -7,6 +8,8 @@ const Container = styled.div`
   padding: 70px 20px 150px 150px;
   display: flex;
   align-items: center;
+  ${mobile({padding:"20px", flexDirection:"column"})}
+
   /* border: 1px solid black; */
 
 `;
@@ -18,6 +21,8 @@ const Image = styled.img`
     display: flex;
     align-items: center;
     object-fit: contain;
+  ${mobile({display:"none"})}
+
     /* border: 1px solid black; */
 
 `;
@@ -40,6 +45,8 @@ const TitleSmall = styled.div`
 const ButtonInfo = styled.div`
   margin-top: 20px;
   display: flex;
+  ${mobile({flexDirection:"column",  display: "inline-block", width:"100%"})}
+
   /* border: 1px solid black; */
 `
 const ButtonRightInfo = styled.div`
@@ -49,6 +56,8 @@ const ButtonRightInfo = styled.div`
   /* border: 1px solid black; */
   display: flex;
   align-items: center;
+  ${mobile({fontSize:"18px",marginBottom:"20px"})}
+
 `
 const Button = styled.button`
     padding: 10px 30px;
@@ -59,6 +68,8 @@ const Button = styled.button`
     align-items: center;
     color: white;
     cursor: pointer;
+  ${mobile({ display: "inline-block", width:"100%", marginBottom:"20px"})}
+
     /* border: 1px solid black; */
 
 
