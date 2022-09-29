@@ -35,7 +35,7 @@
     /* border:1px solid blue; */
     background-color: #1d1e1c;
     height:450px;
-    width:98%;
+    width:100%;
     padding: 10px;
     display: flex;
   
@@ -51,7 +51,7 @@
   }
   .fmain2{
     /* border:1px solid green; */
-    background-color: #1d1e1c;
+    /* background-color: #1d1e1c; */
     height:450px;
     width:75%;
     display: grid;
@@ -87,11 +87,14 @@
     padding-left: 50px; 
     margin: auto;
     text-align: left;
+   
 
 
   }
   .fh3>h3{
     color: #ffff;
+    margin-bottom: 10px;
+    font-size: 16px;
     
   }
   .fh3>h3:hover{

@@ -1,11 +1,12 @@
 import {Routes,Route} from "react-router-dom"
 import Home from "../Pages/Home"
 import Integration from "../Pages/Integration"
+import WhyHarvest from "../Pages/WhyHarvest"
 export const Allroute =()=>{
 return<div>
 <Routes>
 <Route path="/" element={<Home/>}/>
-<Route path="/Why-Harvest" element={<h1>Why Harvest</h1>}/>
+<Route path="/Why-Harvest" element={<WhyHarvest />}/>
 <Route path="/Features" element={<h1>Features</h1>}/>
 <Route path="/Customers" element={<h1>Customers</h1>}/>
 <Route path="/Integrations" element={<Integration />}/>
