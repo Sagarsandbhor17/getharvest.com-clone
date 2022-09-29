@@ -7,12 +7,17 @@ const Container = styled.div`
   background-color: #fff8f1;
   width: 90%;
   margin: auto;
-  padding: 70px 20px 50px 100px;
+  margin-top: 120px;
+  padding-bottom: 50px;
+  /* margin-bottom: 50px; */
+
+  /* padding: 70px 20px 50px 100px; */
   /* border: 2px solid red; */
 `;
 
 const InputContainer = styled.div`
-  width: 90%;
+  width: 95%;
+  margin: auto;
   background-color: white;
   height: 60px;
   display: flex;
@@ -22,6 +27,7 @@ const InputContainer = styled.div`
   border-radius: 10px;
   overflow: hidden;
   padding: 10px;
+  
 `;
 const Logo = styled.img``;
 const Input = styled.input`
@@ -35,10 +41,11 @@ const Input = styled.input`
 `;
 
 const FilterContainer = styled.div`
-  width: 90%;
+  /* width: 90%; */
   display: flex;
   /* border: 1px solid black; */
   padding: 10px;
+  padding-left: 20px;
   margin-top: 50px;
 `;
 const FilterCategory = styled.div`
@@ -77,9 +84,9 @@ const FilterData = styled.div`
   /* background-color: crimson; */
 `;
 const Line = styled.hr`
-margin: auto;
+  margin: auto;
   width: 85%;
-  height: 0.5px;
+  height: 1px;
   background-color: red;
   color: red;
 `;

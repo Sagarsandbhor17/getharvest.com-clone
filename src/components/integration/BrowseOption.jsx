@@ -45,6 +45,7 @@ const Button = styled.button`
         background-color: #191919;
     }
 `;
+
 const Line = styled.hr`
   width: 100%;
   height: 1px;
@@ -63,8 +64,7 @@ const BrowseOption = () => {
       </InfoContainer>
     </Container>
     <Line />
-    <br />
-    <br />
+   
     </>
   );
 };
