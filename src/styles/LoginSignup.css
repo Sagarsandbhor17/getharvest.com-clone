@@ -1,0 +1,54 @@
+
+.Login_main_container{
+    background-color: white;
+    margin-top: 10rem;
+}
+.Login_main_container h1{
+  font-size: 2rem;
+  font-weight: bold;
+}
+.login_div input{
+    border: 0.5px solid grey;
+    margin-top: 10px;
+    width: 70%;
+    border-radius: 5px;
+    padding: 0.5rem;
+ }
+ .login_div button{
+    margin-top: 10px;
+    width: 70%;
+    border-radius: 5px;
+    padding: 0.5rem;
+    background-color: rgb(1, 58, 1);
+    color: white;
+ }
+ .google_div{
+    border: 0.5px solid grey;
+    margin-top: 10px;
+    width: 70%;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin: auto; 
+    background-color: white;
+ }
+ .input_div{
+    margin: auto;
+    width: 50%;
+    border: 0.5px solid orangered;
+    padding: 50px 0px;
+    background-color:#fff8f1;
+    margin-top: 10px;
+ }
+ .registration_div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    width: 50%;
+    padding: 0.5rem;
+    margin: auto; 
+ }
+ .registration_div p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+ }

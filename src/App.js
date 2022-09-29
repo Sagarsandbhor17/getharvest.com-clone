@@ -1,20 +1,14 @@
-
 import './App.css';
-import Customers from './components/Customers/Customers';
-import Features from './components/Features/Features';
-
-
-
-
+import { Allroute } from "./components/Allroute";
 import Footer from './components/Footer';
-
+import Navbar from "./components/Navbar";
 function App() {
   return (
-    <div >
-      
-      
-
-    </div>
+    <div className="App">
+      <Navbar />
+      <Allroute />
+      <Footer />
+ </div>
   );
 }
 
