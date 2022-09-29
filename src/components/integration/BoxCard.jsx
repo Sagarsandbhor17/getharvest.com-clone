@@ -12,7 +12,8 @@ const Container = styled.div`
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s ease;
-  ${mobile({})}
+  margin: auto;
+  ${mobile({width:"630px", display:"flex",padding:"10px" })}
 
   &:hover {
     background-color: #d8d2c9;
@@ -22,7 +23,13 @@ const Image = styled.img`
   width: 80px;
   height: 80px;
   margin-bottom: 10px;
+  ${mobile({marginRight:"20px" })}
+
 `;
+const Info = styled.div`
+  display: flex;
+  flex-direction: column;
+`
 const Title = styled.h1`
   font-size: 24px;
   font-weight: 500;
@@ -39,8 +46,10 @@ const BoxCard = ({ item }) => {
     <>
       <Container>
         <Image src={item.img} />
+        <Info>
         <Title>{item.title}</Title>
         <Desc>{item.desc}</Desc>
+        </Info>
       </Container>
       
     </>
