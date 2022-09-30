@@ -1,0 +1,59 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "users": [
+    {
+      "firstname": "mugil",
+      "lastname": "arasan",
+      "email": "mugil@gmail",
+      "mobile": "123455",
+      "password": "Mugill@1",
+      "id": 1
+    },
+    {
+      "firstname": "Sathan",
+      "lastname": "Kumar",
+      "email": "sathan@gmail.com",
+      "mobile": "23456",
+      "password": "Sathan@1995",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "firstname": "Sathan",
+      "lastname": "Kumar",
+      "email": "sathanpce@gmail.com",
+      "company": "pixxon",
+      "password": "Sathan@123456"
+    },
+    {
+      "id": 4,
+      "firstname": "",
+      "lastname": "",
+      "email": "",
+      "company": "",
+      "password": ""
+    },
+    {
+      "id": 5,
+      "firstname": "Sathan",
+      "lastname": "Kumar",
+      "email": "sathanpce@gmail.com",
+      "company": "masai",
+      "password": "sathaha"
+    },
+    {
+      "id": 6,
+      "firstname": "Sathan",
+      "lastname": "Kumar",
+      "email": "sathanpce@gmail.com",
+      "company": "masai",
+      "password": "Sathan@199502"
+    }
+  ]
+}

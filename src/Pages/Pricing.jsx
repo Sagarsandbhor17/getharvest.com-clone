@@ -4,6 +4,7 @@ import PricingCompanies from '../components/PricingCompanies'
 import PricingFeatures from '../components/PricingFeatures'
 import PricingPrice from '../components/PricingPrice'
 import PricingQuestions from '../components/PricingQuestions'
+import { Slide } from '../components/Slide'
 
 const Pricing = () => {
   return (
@@ -12,6 +13,7 @@ const Pricing = () => {
      <PricingCompanies/>
      <PricingFeatures/>
      <PricingQuestions/>
+     <Slide/>
     </div>
   )
 }
