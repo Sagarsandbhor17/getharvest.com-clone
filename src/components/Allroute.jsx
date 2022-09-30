@@ -1,14 +1,17 @@
 import {Routes,Route} from "react-router-dom"
 import Home from "../Pages/Home"
+import { Customers } from "../Pages/HomeComp/Cutomers"
 import Integration from "../Pages/Integration"
 import LoginSignup from "../Pages/LoginSignup"
 import Pricing from "../Pages/Pricing"
+import WhyHarvest from "../Pages/WhyHarvest"
+import Features from "./Features/Features"
 export const Allroute =()=>{
 return<div>
 <Routes>
 <Route path="/" element={<Home/>}/>
 <Route path="/Why-Harvest" element={<WhyHarvest/>}/>
-<Route path="/Features" element={<Features />}/>
+<Route path="/Features" element={<Features/>}/>
 <Route path="/Customers" element={<Customers />}/>
 <Route path="/Integrations" element={<Integration />}/>
 <Route path="/Pricing" element={<Pricing/>}/>
