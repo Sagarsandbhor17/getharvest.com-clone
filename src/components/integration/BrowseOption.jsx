@@ -52,6 +52,8 @@ const Line = styled.hr`
   color: red;
 `;
 const BrowseOption = () => {
+  
+  
   return (
     <>
     <Container>
@@ -59,12 +61,11 @@ const BrowseOption = () => {
       <InfoContainer>
         <Title>Build your own Harvest integration</Title>
         <TitleSmall>Extend the functionality of your app by easily adding Harvest <br /> timers, or build a bespoke integration with the Harvest API.</TitleSmall>
-        <Button>Browse options</Button>
+        <a href="https://www.getharvest.com/add-time-tracking"  rel="noopener noreferrer"><Button >Browse options</Button></a>
       </InfoContainer>
     </Container>
     <Line />
-    <br />
-    <br />
+   
     </>
   );
 };
