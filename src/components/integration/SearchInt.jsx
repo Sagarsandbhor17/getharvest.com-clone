@@ -1,3 +1,4 @@
+import { useState } from "react";
 import styled from "styled-components";
 import { integrateData } from "../../kirandata";
 import searchImg from "../../kiranmedia/searchIcon.png";
@@ -112,28 +113,38 @@ const Line = styled.hr`
 
 `;
 const SearchInt = () => {
+  const [data, setData] = useState(integrateData)
+  const [query, setQuery] = useState("")
+
+  const filterCat = (catItem) =>{
+    const updatedItems = integrateData.filter(ele =>(
+      ele.category === catItem
+    ))
+    setData(updatedItems)
+  }
+  // console.log(integrateData.filter(item => item.title.toLowerCase().includes("ch")));
   return (
     <>
       <Container>
         <InputContainer>
           <Logo src={searchImg}></Logo>
-          <Input placeholder="Find an app or services you use"></Input>
+          <Input onChange={(e) => setQuery(e.target.value)} placeholder="Find an app or services you use" ></Input> 
         </InputContainer>
         <FilterContainer>
           <FilterCategory>
-            <Button>All Integrations</Button>
-            <Button>Analytics & reporting</Button>
-            <Button>Browser extensions</Button>
-            <Button>Communication & CRM</Button>
-            <Button>Development & connectivity</Button>
-            <Button>Featured integrations</Button>
-            <Button>Finance & payments</Button>
-            <Button>Issue tracking & support</Button>
-            <Button>Productivity</Button>
+            <Button onClick={() => setData(integrateData)}>All Integrations</Button>
+            <Button onClick={() => filterCat("Analytics & reporting")}>Analytics & reporting</Button>
+            <Button onClick={() => filterCat("Browser extensions")}>Browser extensions</Button>
+            <Button onClick={() => filterCat("Communication & CRM")}>Communication & CRM</Button>
+            <Button onClick={() => filterCat("Development & connectivity")}>Development & connectivity</Button>
+            <Button onClick={() => filterCat("Featured integrations")}>Featured integrations</Button>
+            <Button onClick={() => filterCat("Finance & payments")}>Finance & payments</Button>
+            <Button onClick={() => filterCat("Issue tracking & support")}>Issue tracking & support</Button>
+            <Button onClick={() => filterCat("Productivity")}>Productivity</Button>
             <Button>Project management</Button>
           </FilterCategory>
           <FilterData>
-            {integrateData.map((item) => (
+            {data.filter((item => item.title.toLowerCase().includes(query))).map((item) => (
               <BoxCard key={item.id} item={item} />
             ))}
           </FilterData>
