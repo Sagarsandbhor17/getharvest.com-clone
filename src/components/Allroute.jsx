@@ -1,10 +1,11 @@
 import {Routes,Route} from "react-router-dom"
 import Home from "../Pages/Home"
-import { Customers } from "../Pages/HomeComp/Cutomers"
+
 import Integration from "../Pages/Integration"
 import LoginSignup from "../Pages/LoginSignup"
 import Pricing from "../Pages/Pricing"
 import WhyHarvest from "../Pages/WhyHarvest"
+import Customers from "./Customers/Customers"
 import Features from "./Features/Features"
 export const Allroute =()=>{
 return<div>
