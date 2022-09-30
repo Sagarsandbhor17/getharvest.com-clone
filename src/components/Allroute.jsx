@@ -7,9 +7,9 @@ export const Allroute =()=>{
 return<div>
 <Routes>
 <Route path="/" element={<Home/>}/>
-<Route path="/Why-Harvest" element={<h1>Why Harvest</h1>}/>
-<Route path="/Features" element={<h1>Features</h1>}/>
-<Route path="/Customers" element={<h1>Customers</h1>}/>
+<Route path="/Why-Harvest" element={<WhyHarvest/>}/>
+<Route path="/Features" element={<Features />}/>
+<Route path="/Customers" element={<Customers />}/>
 <Route path="/Integrations" element={<Integration />}/>
 <Route path="/Pricing" element={<Pricing/>}/>
 <Route path="/signin" element={<LoginSignup/>}/>
