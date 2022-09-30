@@ -1,0 +1,33 @@
+.features_main_cointainer{
+    border-bottom: 0.5px solid orangered;
+    padding: 3rem 2rem;
+    width: 90%;
+    margin: auto;
+}
+.features_main_cointainer h1{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.features_grid_div{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.feauters_data_div{
+    padding: 1.5rem;
+    cursor: pointer;
+}
+.feauters_data_div img{
+    margin: auto;
+}
+.feauters_data_div div{
+    margin-top: 5px;
+}
+.feauters_data_div h1{
+    font-size: 1.5rem;
+  
+}
+.feauters_data_div h5{
+   font-size: 1.2rem;
+   color: rgb(80, 79, 79);
+}

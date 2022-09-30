@@ -5,6 +5,7 @@ import { mobile } from "./IntegrationResponsive";
 const Container = styled.div`
   /* border: 1px solid black; */
   width: 300px;
+  height: 230px;
   padding: 15px;
   background-color: white;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
@@ -12,8 +13,8 @@ const Container = styled.div`
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s ease;
-  margin: auto;
-  ${mobile({width:"630px", display:"flex",padding:"10px" })}
+  /* margin: auto; */
+  ${mobile({width:"630px", display:"flex",padding:"10px",height:"auto" })}
 
   &:hover {
     background-color: #d8d2c9;
@@ -51,7 +52,6 @@ const BoxCard = ({ item }) => {
         <Desc>{item.desc}</Desc>
         </Info>
       </Container>
-      
     </>
   );
 };
