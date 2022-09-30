@@ -1,12 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-
+import { mobile } from "./IntegrationResponsive";
 const Container = styled.div`
   background-color: #fff8f1;
   margin: auto;
   padding: 70px 20px 150px 150px;
   display: flex;
   align-items: center;
+  ${mobile({padding : "20px",flexDirection:"column",})}
 `;
 
 const Image = styled.img`
@@ -15,6 +16,7 @@ const Image = styled.img`
     height: 180px;
     display: flex;
     align-items: center;
+    ${mobile({width:"120px",height:"120px"})}
 `;
 const InfoContainer = styled.div`
   flex: 3;
@@ -23,12 +25,13 @@ const Title = styled.h1`
     font-size: 40px;
     font-weight: 400;
     text-align: left;
+    ${mobile({fontSize:"30px"})}
 `;
 const TitleSmall = styled.div`
     font-size: 30px;
     font-weight: 400;
     text-align: left;
-
+    ${mobile({fontSize:"20px"})}
 `;
 const Button = styled.button`
     margin-top: 20px;
@@ -40,7 +43,7 @@ const Button = styled.button`
     justify-content: flex-start;
     color: white;
     cursor: pointer;
-
+    ${mobile({width:"100%", display:" inline-block",marginBottom:"50px" })}
     &:hover{
         background-color: #191919;
     }
