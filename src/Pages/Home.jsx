@@ -1,9 +1,11 @@
-
 import React from 'react';
 import star from "../kiranmedia/Rate_stars.svg";
 import {Box, Button, HStack, Input, SimpleGrid, Stack, Text, VStack} from '@chakra-ui/react';
 import "../styles/Home.css"
 import { Link } from 'react-router-dom';
+import { Learning } from "./HomeComp/Learning";
+import { Customers } from './HomeComp/Cutomers';
+import { StartTracking } from './HomeComp/StartTracking';
 
 const Home = () => {
 return <div>
@@ -142,7 +144,13 @@ return <div>
 </Box>
 </SimpleGrid></Box>
 <div style={{height:'1px',width:"90%",margin:'auto',marginTop:"3rem",backgroundColor:"orangered"}}></div>
-
+<br/>
+<br/>
+<Customers/>
+<div style={{height:'1px',width:"90%",margin:'auto',marginTop:"3rem",backgroundColor:"orangered",marginBottom:"3rem"}}></div>
+<Learning/>
+<div style={{height:'1px',width:"100%",margin:'auto',marginTop:"3rem",backgroundColor:"orangered"}}></div>
+<StartTracking/>
 </div>
 }
 
