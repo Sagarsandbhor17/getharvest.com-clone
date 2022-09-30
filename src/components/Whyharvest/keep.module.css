@@ -1,0 +1,80 @@
+.Emain{
+    border-top: 1px solid orange;
+    border-bottom: 2px solid orange;
+    width: 100%;
+    height:600px;
+}
+.Emain1{
+    /* border: 1px solid red; */
+    width: 90%;
+    height:90%;
+    margin: auto;
+    display: flex;
+
+}
+.Emain1>div{
+    /* border: 1px solid blue; */
+    width:50%;
+    height:100%;
+}
+.Emain1_1{
+    padding:10px;
+}
+.Emain1_1>h1{
+    font-size: 40px;
+    text-align: left;
+}
+.Emain1_1>p{
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+
+}
+.Emain1_1>button{
+    margin-top: 25px;
+    height: 50px;
+    width: 220px;
+    background-color: black;
+    border-radius: 0.95rem;
+    color: white;
+    font-size: 1.25rem;
+    margin-left: -60%;
+
+}
+.Emain1_2>div{
+   
+}
+.Emain1_2img{
+    /* border: 1px solid green; */
+    width: 100%;
+    height:65%;
+
+}
+.Emain1_2imgdata{
+    /* border: 1px solid orangered; */
+    width: 100%;
+    height:35%;
+    padding: 10px;
+
+}
+.Emain1_2imgdata>h4{
+    font-size: 20px;
+    color: grey;
+}
+@media all and (max-width: 600px) {
+    .Emain1{
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .Emain1>div{
+        width: 100%;
+    }
+    .Emain{
+        height: 100%;
+    }
+    .Emain1_1>button{
+        display: block;
+        margin: auto;
+    }
+   
+  }
