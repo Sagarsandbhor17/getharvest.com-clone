@@ -52,7 +52,6 @@ const BoxCard = ({ item }) => {
         <Desc>{item.desc}</Desc>
         </Info>
       </Container>
-      
     </>
   );
 };

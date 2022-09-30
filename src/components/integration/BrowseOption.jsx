@@ -63,8 +63,7 @@ const BrowseOption = () => {
       </InfoContainer>
     </Container>
     <Line />
-    <br />
-    <br />
+   
     </>
   );
 };
