@@ -10,7 +10,7 @@ export const Allroute =()=>{
 return<div>
 <Routes>
 <Route path="/" element={<Home/>}/>
-<Route path="/Why-Harvest" element={<WhyHarvest />}/>
+<Route path="/Why-Harvest" element={<WhyHarvest/>}/>
 <Route path="/Features" element={<Features />}/>
 <Route path="/Customers" element={<Customers />}/>
 <Route path="/Integrations" element={<Integration />}/>
