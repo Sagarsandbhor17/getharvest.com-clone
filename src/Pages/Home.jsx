@@ -84,7 +84,6 @@ return <div>
 <SimpleGrid columns={[1,2,2]} gap='10px'>
   <Box width='90%' justifySelf='left'>
     <VStack>
-
       <HStack gap='10px' className='featBox'>
       <Stack><img src='https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/homepage/nav-time.svg' alt='ib' /></Stack>
       <Stack className='feat'>
