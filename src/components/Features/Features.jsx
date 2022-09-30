@@ -1,9 +1,7 @@
 import React from 'react'
-import { Box, Heading, HStack, Stack, Image, Divider, Button } from '@chakra-ui/react'
+import { Box, Heading, HStack, Stack, Image, Divider } from '@chakra-ui/react'
 import style from "./feature.module.css"
 import Timetracking from './Timetracking'
-import Reports from './Reports'
-import Invoicing from './Invoicing'
 
 
 
@@ -33,7 +31,6 @@ const Features = () => {
   <Heading  fontSize="50px" lineheight="60px" fontWeight="400">
   Everything your team needs to keep ticking
   </Heading>
-
   <Heading  fontSize="29px" lineheight="37.7px" fontWeight="400">
   Intuitive time tracking and powerful insights that help your team thrive.
   </Heading>
@@ -63,8 +60,6 @@ const Features = () => {
 </div>
 {/* featureheader */}
 <Timetracking />
-<Reports />
-<Invoicing />
 </div>
 
   

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import star from "../kiranmedia/Rate_stars.svg";
 import {Box, Button, HStack, Input, SimpleGrid, Stack, Text, VStack} from '@chakra-ui/react';
@@ -146,3 +147,4 @@ return <div>
 }
 
 export default Home
+
