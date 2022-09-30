@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.splidemain{
+    margin: auto;
+    width: 93%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 3rem;
+}
+.rating{
+    font-size: 1rem;
+    align-items: center;
+    color: orangered;
+    display: flex;
+    margin-bottom: 2rem;
+}
+.slide {
+    width: 23rem;
+    text-align: left;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
+   border-radius: 10px;
+   margin-bottom: 2rem;
+}

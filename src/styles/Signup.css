@@ -1,0 +1,60 @@
+.signup_main_container{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
+    width: 50%;
+    padding: 4rem 0rem;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.signup_main_container h1{
+    font-size: 3rem;
+}
+.signup_google_div{
+    border: 1px solid;
+    width: 60%;
+    margin: auto;
+    padding: 10px 5px;
+    border-radius: 15px;
+    margin-top: 1rem;
+}
+.signup_company_input{
+    display: flex;
+    gap: 30px;
+    width: 60%;
+    margin: auto;
+}
+.signup_company_input input{
+  width: 45%;
+}
+.signup_name_input{
+    display: flex;
+    gap: 30px;
+    width: 60%;
+    margin: auto; 
+}
+.signup_name_input input{
+    width: 45%;
+}
+.submit_div{
+    width: 60%;
+    margin: auto;
+}
+.submit_div input,button{
+    width: 100%;
+    margin: auto;
+}
+
+.signup_input_div input{
+    border: 0.5px solid rgb(70, 69, 69);
+    margin-top: 1rem;
+    padding: 10px 8px;
+    border-radius: 5px;
+}
+.signup_input_div button{
+    background-color: rgb(1, 58, 1);
+    color: white;
+    margin-top: 1rem;
+    padding: 10px 5px;
+    border-radius: 15px;
+}

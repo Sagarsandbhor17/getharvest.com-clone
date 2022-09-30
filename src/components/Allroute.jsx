@@ -3,6 +3,7 @@ import Home from "../Pages/Home"
 import Integration from "../Pages/Integration"
 import LoginSignup from "../Pages/LoginSignup"
 import Pricing from "../Pages/Pricing"
+import Signup from "../Pages/Signup"
 export const Allroute =()=>{
 return<div>
 <Routes>
@@ -13,7 +14,7 @@ return<div>
 <Route path="/Integrations" element={<Integration />}/>
 <Route path="/Pricing" element={<Pricing/>}/>
 <Route path="/signin" element={<LoginSignup/>}/>
-<Route path="/signup" element={<h1>Sign Up</h1>}/>
+<Route path="/signup" element={<Signup/>}/>
 
 </Routes>
     </div>

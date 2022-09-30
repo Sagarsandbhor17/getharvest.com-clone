@@ -1,4 +1,15 @@
 .question_main_container{
+    border-bottom: 1px solid orangered;
+    margin: auto;
     display: flex;
-    gap: 20px;
+    width: 90%;
+    justify-content: space-around;
+    padding: 50px 0px;
+}
+.question_main_container>div{
+    /* border: 1px solid; */
+    width: 50%;
+}
+.questions_heading h1{
+    font-size: 2rem;
 }
