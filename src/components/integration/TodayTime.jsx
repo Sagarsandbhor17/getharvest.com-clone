@@ -86,7 +86,7 @@ const TodayTime = () => {
       <Title>Start tracking time today</Title>
       <TitleSmall>Join 70,000+ companies spending their time wisely with Harvest.</TitleSmall>
       <ButtonInfo>
-        <Button>Try Harvest Free</Button>
+      <a href="https://www.getharvest.com/signup" rel="noopener noreferrer"> <Button>Try Harvest Free</Button></a>
         <ButtonRightInfo>Free 30-day trial. No credit card required.</ButtonRightInfo>
         </ButtonInfo>
     </InfoContainer>
