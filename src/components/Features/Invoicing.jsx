@@ -1,4 +1,3 @@
-
 import React from 'react'
 import invoices from "./assets/invoices.png"
 import styled from 'styled-components'
@@ -98,7 +97,6 @@ const Invoicing = () => {
          height:auto;
          border:1px solid #fff8f1;
          ${mobile({width:"100%",margin:"auto"})}
-
     `
     const ImgBox=styled.div`
         width:100%;

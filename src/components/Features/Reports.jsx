@@ -59,7 +59,6 @@ const Reports = () => {
   display: flex;
   align-items: center;
 ${mobile({width:"50%"})}
-
 `;
 const TextContainer = styled.div`
   flex: 3;
@@ -73,15 +72,12 @@ const Head1 = styled.h1`
     
     text-align: left;
   ${mobile({fontSize:"30px"})}
-
 `;
 const Text1 = styled.div`
     font-size: 30px;
     font-weight: 400;
     text-align: left;
   ${mobile({fontSize:"20px"})}
-
-
 `;
 const Button1 = styled.button`
     margin-top: 20px;
@@ -94,8 +90,6 @@ const Button1 = styled.button`
     color: white;
     cursor: pointer;
   ${mobile({width:"100%", display:" inline-block",marginBottom:"50px" })}
-
-
     &:hover{
         background-color: #191919;
     }
@@ -124,7 +118,6 @@ const Box1=styled.div`
      height:auto;
      border:1px solid #fff8f1;
      ${mobile({width:"100%",margin:"auto"})}
-
 `
 const ImgBox=styled.div`
     width:100%;
@@ -147,7 +140,6 @@ const Title=styled.h3`
 line-height: 31.2px;
 font-weight: 400;
 padding-top:5%;
-
 `
 const Desc=styled.h4`
     font-size: 20px;
@@ -188,10 +180,8 @@ line-height: 28px;
     `
     const Field=styled.h5`
     font-size: 20px;
-
 font-weight: 600;
 line-height: 28px;
-
     `
     const Profile=styled.img`
     width:90%;

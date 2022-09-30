@@ -1,4 +1,3 @@
-
 import React from 'react'
 import timesheets from "./assets/timesheets.png"
 import styled from 'styled-components'
@@ -97,7 +96,6 @@ const Timetracking = () => {
          height:auto;
          border:1px solid #fff8f1;
          ${mobile({width:"100%",margin:"auto"})}
-
     `
     const ImgBox=styled.div`
         width:100%;
@@ -224,19 +222,3 @@ align-items: center;
         }
     
     export default Timetracking
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

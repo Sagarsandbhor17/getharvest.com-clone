@@ -1,0 +1,82 @@
+.Tmain{
+    border-top: 1px solid orange;
+    border-bottom: 2px solid orange;
+    width: 100%;
+    height:600px;
+
+}
+.Tmain1{
+    /* border: 1px solid red; */
+    width: 90%;
+    height:90%;
+    margin: auto;
+    display: flex;
+
+}
+.Tmain1>div{
+    /* border: 1px solid blue; */
+    width:50%;
+    height:100%;
+
+}
+.Tmain1_1img{
+    /* border: 1px solid green; */
+    width: 100%;
+    height:65%;
+
+}
+.Tmain1_1imgdata{
+    /* border: 1px solid orangered; */
+    width: 100%;
+    height:35%;
+    padding: 10px;
+
+}
+.Tmain1_1imgdata>h4{
+    font-size: 20px;
+    color: grey;
+
+}
+.Tmain1_2>h1{
+    font-size: 40px;
+    text-align: left;
+
+}
+.Tmain1_2>p{
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+
+
+}
+.Tmain1_2>button{
+    margin-top: 25px;
+    height: 50px;
+    width: 220px;
+    background-color: black;
+    border-radius: 0.95rem;
+    color: white;
+    font-size: 1.25rem;
+    margin-left: -60%;
+
+}
+.Tmain1_2{
+    padding: 10px;
+}
+@media all and (max-width: 600px) {
+    .Tmain1{
+        flex-direction: column;
+        height: auto;
+    }
+    .Tmain1>div{
+        width: 100%;
+    }
+    .Tmain{
+        height: 100%;
+    }
+    .Tmain1_2>button{
+        display: block;
+        margin: auto;
+    }
+   
+  }
