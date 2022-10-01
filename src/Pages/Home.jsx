@@ -1,13 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 import star from "../kiranmedia/Rate_stars.svg";
-import {Box, Button, HStack, Input, SimpleGrid, Stack, Text, VStack} from '@chakra-ui/react';
+import {Alert, AlertIcon, AlertTitle, Box, Button, HStack, Input, SimpleGrid, Stack, Text, VStack} from '@chakra-ui/react';
 import "../styles/Home.css"
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Learning } from "./HomeComp/Learning";
 import { Customers } from './HomeComp/Cutomers';
 import { StartTracking } from './HomeComp/StartTracking';
 
 const Home = () => {
+const [workEmail,setWorkEmail]=useState(null);
+  const [showAlert,setShowAlert]=useState(false);
+const navigate=useNavigate()
+const onChange=(e)=>{
+  setWorkEmail(e.target.value);
+console.log(workEmail)
+}
+
+const onClick=()=>{
+  if(workEmail){
+    setShowAlert(false);
+    navigate("/signup");
+    }
+    else if (workEmail===null){
+      setShowAlert(true);
+    }
+}
+
+
 return <div>
 
 <SimpleGrid columns={[1,1,2]} spacing='20px' width="90%" margin="auto" mt='2rem'>
@@ -27,11 +46,17 @@ return <div>
     </Text>
     <br/>
     <HStack>
-      <Input focusBorderColor='orangered' borderColor='orangered' placeholder='Work email' width="60%"/>
-      <Button colorScheme='none' background='#FA5D00'>
+      <Input type="email" onChange={onChange}
+      focusBorderColor='orangered' borderColor='orangered' placeholder='Work email' width="60%"/>
+      <Button colorScheme='none' background='#FA5D00' width='auto' onClick={onClick} >
         Get Started
       </Button>
     </HStack>
+    {showAlert&&<Alert bg='none' color='red' >
+           <AlertIcon color='red' />
+          <AlertTitle>This field can't be empty!</AlertTitle>
+              </Alert>}
+
     <Text textAlign='left' fontWeight='medium' color='#9F9F9F' >Free 30-day trial. No credit card required.</Text>
   </Box>
   <Box>
@@ -119,7 +144,7 @@ return <div>
 </SimpleGrid>
 <br/>
 <Box width="20%">
-<Button colorScheme='none' bg='black' padding='1.5rem' >
+<Button colorScheme='none' bg='black' padding='1.5rem' ml='2rem' >
 <Link to="/Features" >Discover all features</Link>
 </Button></Box>
 </Box>
@@ -136,11 +161,11 @@ return <div>
   <Text color='#FA5D00' fontWeight='bold' fontSize='2xl' >INTEGRATIONS</Text>
   <Text fontWeight='md' fontSize='4xl' >Integrated with the tools your team already knows and loves</Text>
   <Text className='subfont' >Your favorite apps work seamlessly with Harvest so you can keep projects on track however you work.</Text>
-  <Box width="20%">
+  
     <br />
-<Button colorScheme='none' bg='black' padding='1.5rem' >
+<Button colorScheme='none' bg='black' padding='1.5rem' width='auto' >
 <Link to="/Integrations" >Browse integrations</Link>
-</Button></Box>
+</Button>
 </Box>
 </SimpleGrid></Box>
 <div style={{height:'1px',width:"90%",margin:'auto',marginTop:"3rem",backgroundColor:"orangered"}}></div>

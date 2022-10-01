@@ -17,7 +17,7 @@ export const Customers=()=>{
       <span style={{color:"orangered",fontSize:"3rem",fontStyle:"italic" }}>"</span>
     </Text>
     <Text color='black' fontWeight='medium' fontSize='2xl' >Noah Gedrich, Zehner</Text><br/>
-<Button colorScheme='none' bg='black' padding='1.5rem' >
+<Button colorScheme='none' bg='black' padding='1.5rem' width='auto' >
 <Link to="/Customers" >Meet our customers</Link>
 </Button>
   </Box>
