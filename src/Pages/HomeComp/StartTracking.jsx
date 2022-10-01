@@ -10,7 +10,7 @@ export const StartTracking=()=>{
                     <Text width='90%' fontSize="2xl" fontWeight='medium' color="gray" >Join 70,000+ companies spending their time wisely with Harvest.</Text>
                    <br/>
                    <HStack>
-                   <Button background='#FA5D00' colorScheme="none" width="40%">
+                   <Button background='#FA5D00' colorScheme="none" width="auto">
                             <Link to="/signup"><Text fontWeight="bold">Try Harvest Free</Text></Link>
                         </Button>
                         <Text fontWeight='medium' color="gray">Free 30-day trial. No credit card required.</Text>
