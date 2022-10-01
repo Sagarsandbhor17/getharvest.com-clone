@@ -12,6 +12,9 @@
     font-weight: bold;
     margin-bottom: 2rem;
 }
+.price_top_div p{
+    font-size: 1rem;
+}
 .price-toggle_div{
     display: flex;
     gap: 1rem;
@@ -76,4 +79,183 @@
 .button_div  h6{
     color: rgb(73, 72, 72);
     margin-top: 5px;
-   }
+}
+@media all and (max-width: 450px) {
+    .price_main_container{
+        margin-top: 60px;
+    }
+    
+    .price_top_div{
+        /* border: 1px solid; */
+        width: 60%;
+        margin: auto;
+        padding: 1rem;
+        margin-bottom: 20px;
+    }
+    .price_top_div h1{
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+    }
+    .price_top_div p{
+        font-size: 0.7rem;
+    }
+    .price-toggle_div{
+        /* border: 1px solid; */
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 0.5rem;
+    }
+    .price-toggle_div h5{
+        font-size: 1rem; 
+    }
+    
+    .price_bottom_div{
+        /* border: 1px solid; */
+        display: block;
+        width: 90%;
+        margin: auto;
+        /* justify-content: space-around; */
+    }
+    .price_bottom_div>div{
+        border: 1px solid orangered;
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        padding: 1rem;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 30px;
+        
+    }
+    .heading_div{
+        /* border: 1px solid; */
+        display: flex;
+        width: 100%;
+        margin: auto;
+        justify-content: space-between;
+    }
+    .price_heading_div{
+        text-align: left;
+    }
+    .price_heading_div h1{
+        margin-bottom: 1rem;
+        color: orangered;
+        font-size: 1.1rem;
+    }
+    .price_heading_div p{
+        margin-top: 0.2rem;
+        font-weight: 100;
+        font-size: 0.8rem;
+    }
+    .price_mentioned_div h5{
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+    .price_mentioned_div h6{
+     color: grey;
+     
+    }
+    .button_div button{
+        margin-top: 1rem;
+        width: 60%;
+        border-radius: 15px;
+        padding: 0rem;
+        background-color: rgb(1, 58, 1);
+        color: white;
+        font-size: 0.7rem;
+    }
+    .button_div  h6{
+        color: rgb(73, 72, 72);
+        margin-top: 5px;
+        font-size: 0.7rem;
+    }
+  }
+
+  @media all and (max-width: 720px) {
+    .price_main_container{
+        margin-top: 60px;
+    }
+    
+    .price_top_div{
+        /* border: 1px solid; */
+        width: 40%;
+        margin: auto;
+        padding: 1rem;
+        margin-bottom: 20px;
+    }
+    .price_top_div h1{
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+    }
+    .price-toggle_div{
+        /* border: 1px solid; */
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 0.5rem;
+    }
+    .price-toggle_div h5{
+        font-size: 1rem; 
+    }
+    
+    .price_bottom_div{
+        /* border: 1px solid; */
+        display: block;
+        width: 90%;
+        margin: auto;
+        /* justify-content: space-around; */
+    }
+    .price_bottom_div>div{
+        border: 1px solid orangered;
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        padding: 2rem;
+        width: 60%;
+        margin: auto;
+        margin-bottom: 30px;
+        
+    }
+    .heading_div{
+        /* border: 1px solid; */
+        display: flex;
+        width: 100%;
+        margin: auto;
+        justify-content: space-between;
+    }
+    .price_heading_div{
+        text-align: left;
+    }
+    .price_heading_div h1{
+        margin-bottom: 1rem;
+        color: orangered;
+        font-size: 1.5rem;
+    }
+    .price_heading_div p{
+        margin-top: 0.2rem;
+        font-weight: 500;
+    }
+    .price_mentioned_div h5{
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+    .price_mentioned_div h6{
+     color: grey;
+     
+    }
+    .button_div button{
+        margin-top: 1rem;
+        width: 90%;
+        border-radius: 15px;
+        padding: 0.5rem;
+        background-color: rgb(1, 58, 1);
+        color: white;
+    }
+    .button_div  h6{
+        color: rgb(73, 72, 72);
+        margin-top: 5px;
+    }
+  }

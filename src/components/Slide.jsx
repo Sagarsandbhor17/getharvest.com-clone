@@ -55,7 +55,7 @@ export const Slide = ({onClick}) => {
     
   return (
    <>
-      <Splide className='splidemain'  options={{perPage:3,gap:"3rem",drag:"free"}}>
+    <Splide className='splidemain'  options={{perPage:3,gap:"3rem",drag:"free"}}>
    {data.map((e)=>(
 <SplideSlide>
     <div key={e.id} onClick={onClick} className="slide">

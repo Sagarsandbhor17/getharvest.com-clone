@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import {
 Nav,
 NavLink,
@@ -10,6 +10,9 @@ import "../styles/Navbar.css"
 import {Text,Image,Button} from "@chakra-ui/react"
 import {Link} from "react-router-dom"
 import {NavModal } from './NavModal';
+import { AuthContext } from './AppContext';
+import { gapi } from "gapi-script"
+import { GoogleLogout } from 'react-google-login';
 
 export const logoStyle={display: "inline-block",width:"40px",margin:"auto",marginRight:"0"}
 
@@ -28,6 +31,21 @@ const Navbar = () => {
   };
   window.addEventListener('scroll', changeNavbarColor);
 const [show,setShow]=useState(false)
+
+  //  logout googlr function
+
+  const {logoutButton,clientId,onLogoutSuccess } = useContext(AuthContext);
+  useEffect(() => {
+      function start() {
+        gapi.client.init({
+          clientId: process.env.REACT_PUBLIC_GOOGLE_CLIENT_ID,
+          scope: 'email',
+        });
+      }
+  
+      gapi.load('client:auth2', start);
+    }, []);
+
 return (
 	<>
 	<Nav className={colorChange ? 'colorChange' : 'navbar'}>
@@ -50,7 +68,16 @@ return (
 		</NavMenu>
 		<NavBtn>
 		<NavLink to='/signin' >
-      <Text fontWeight="medium">Sign in</Text>
+    {logoutButton ? 
+    <GoogleLogout
+      clientId={clientId}
+      icon={false}
+      buttonText="Logout"
+      onLogoutSuccess={onLogoutSuccess}
+      style={{color:"black"}}
+    >
+    </GoogleLogout> : <Text fontWeight="medium">Sign in</Text> }
+      
       </NavLink>
 		</NavBtn>
     <NavBtn>

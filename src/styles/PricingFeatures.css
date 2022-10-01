@@ -31,3 +31,11 @@
    font-size: 1.2rem;
    color: rgb(80, 79, 79);
 }
+
+@media all and (max-width: 720px) {
+    .features_grid_div{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+  }

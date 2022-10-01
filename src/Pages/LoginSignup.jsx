@@ -1,12 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useNavigate } from 'react-router-dom'
 import "../styles/LoginSignup.css"
 import axios from "axios";
 import { emailValidator, passwordValidator } from "./validate";
+import {GoogleLogin} from 'react-google-login'
+import { gapi } from "gapi-script"
+import { AuthContext } from "../components/AppContext";
 // import { useDispatch } from "react-redux";
 
 
 const LoginSignup = () => {
+
 
   const[user, setUser] = useState([])
   const navigate = useNavigate()
@@ -44,6 +48,20 @@ const formSubmitter = e => {
       }
   })
 };
+
+        // Login with google  functions
+
+        const { loginButton,clientId,onLoginSuccess,onFailureSuccess} = useContext(AuthContext);
+        useEffect(() => {
+            function start() {
+              gapi.client.init({
+                clientId: process.env.REACT_PUBLIC_GOOGLE_CLIENT_ID,
+                scope: 'email',
+              });
+            }
+        
+            gapi.load('client:auth2', start);
+          }, []);
   return (
     <div className='Login_main_container'>
         <h1>Sign in to Harvest</h1>
@@ -52,7 +70,16 @@ const formSubmitter = e => {
 								<div style={{ marginBottom: '10px', color: 'green' }}>{successMessage}</div>
 							)}
        <div className='input_div'>
-             <div className='google_div'>sign in with google</div>
+             <div className='google_div'>
+             {loginButton ? 
+                 <GoogleLogin
+                 clientId={clientId}
+                buttonText="sign in google"
+                onSuccess={onLoginSuccess}
+                onFailure={onFailureSuccess}
+                cookiePolicy={'single_host_origin'}
+                 /> : null }
+             </div>
              <p>OR</p>
              <div className='login_div'>
                 <input placeholder='Work Email' type="email" 
@@ -67,7 +94,7 @@ const formSubmitter = e => {
        </div>
        <div className='registration_div'>
                 <p>Forgot Password?</p>
-                <p>New Registration</p>
+                <p onClick={()=>{navigate("/signup")}}>New Registration</p>
              </div>
     </div>
   )
