@@ -5,6 +5,7 @@ import App from "./App";
 // import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
+import AppContext from "./components/AppContext";
 // import { store } from "./store/index";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -12,7 +13,9 @@ root.render(
   // <Provider store={store}>
   <BrowserRouter>
     <ChakraProvider>
+      <AppContext>
       <App />
+      </AppContext>
     </ChakraProvider>
   </BrowserRouter>
   // </Provider>

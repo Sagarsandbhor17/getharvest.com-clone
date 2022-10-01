@@ -23,13 +23,14 @@
     color: white;
  }
  .google_div{
-    border: 0.5px solid grey;
+    /* border: 0.5px solid grey; */
+   
     margin-top: 10px;
     width: 70%;
     border-radius: 5px;
     padding: 0.5rem;
     margin: auto; 
-    background-color: white;
+  
  }
  .input_div{
     margin: auto;
@@ -41,7 +42,8 @@
  }
  .registration_div{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    gap: 20px;
     align-items: center;
     margin-top: 10px;
     width: 50%;
@@ -51,4 +53,60 @@
  .registration_div p:hover{
     text-decoration: underline;
     cursor: pointer;
+ }
+ @media all and (max-width: 450px) {
+   
+.Login_main_container{
+   background-color: white;
+   /* border: 1px solid; */
+}
+.Login_main_container h1{
+ font-size: 1.2rem;
+ font-weight: bold;
+}
+.login_div input{
+   border: 0.5px solid grey;
+   margin-top: 10px;
+   width: 70%;
+   border-radius: 5px;
+   padding: 0.1rem;
+   
+}
+.login_div button{
+   margin-top: 10px;
+   width: 70%;
+   border-radius: 5px;
+   padding: 0.1rem;
+}
+.google_div{
+
+   border: 1px solid;
+   margin-top: 10px;
+   width: 70%;
+   border-radius: 5px;
+   padding: 0.1rem;
+   margin: auto; 
+ 
+}
+.input_div{
+   margin: auto;
+   width: 50%;
+   border: 0.5px solid orangered;
+   padding: 50px 0px;
+   background-color:#fff8f1;
+   margin-top: 10px;
+}
+.registration_div{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin-top: 10px;
+   width: 50%;
+   padding: 0.5rem;
+   margin: auto; 
+}
+.registration_div p:hover{
+   text-decoration: underline;
+   cursor: pointer;
+}
  }

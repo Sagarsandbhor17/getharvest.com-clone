@@ -1,9 +1,12 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import "../styles/Signup.css"
 import axios from 'axios';
 import { useEffect } from 'react';
 import { emailValidator, passwordValidator } from "./validate";
 import { Navigate } from 'react-router';
+import { gapi } from "gapi-script"
+import { AuthContext } from '../components/AppContext';
+import GoogleLogin from 'react-google-login';
 const Signup = () => {
 
   const [errorMessage, seterrorMessage] = React.useState('');
@@ -79,6 +82,20 @@ const getData = ()=>{
         setData(res.data)
     })
 }
+
+        // Login with google  functions
+
+        const { loginButton,clientId,onLoginSuccess,onFailureSuccess} = useContext(AuthContext);
+        useEffect(() => {
+            function start() {
+              gapi.client.init({
+                clientId: process.env.REACT_PUBLIC_GOOGLE_CLIENT_ID,
+                scope: 'email',
+              });
+            }
+        
+            gapi.load('client:auth2', start);
+          }, []);
   return (
     <div className='signup_main_container'>
               <h1>Get a FREE Trial</h1>
@@ -88,7 +105,14 @@ const getData = ()=>{
 								<div style={{ marginBottom: '10px', color: 'green' }}>{successMessage}</div>
 							)}
         <div className='signup_google_div'>
-            <h2>Signup with google</h2>
+        {loginButton ? 
+                 <GoogleLogin
+                 clientId={clientId}
+                buttonText="sign up google"
+                onSuccess={onLoginSuccess}
+                onFailure={onFailureSuccess}
+                cookiePolicy={'single_host_origin'}
+                 /> : null }
         </div>
             <p>OR</p>
             <div className='signup_input_div'>
