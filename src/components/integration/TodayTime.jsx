@@ -63,6 +63,7 @@ const Button = styled.button`
     padding: 10px 30px;
     font-size: 20px;
     border-radius: 10px;
+    width: 220px;
     background-color: #fa5d00;
     display: flex;
     align-items: center;
