@@ -20,6 +20,8 @@ const Image = styled.img`
 `;
 const InfoContainer = styled.div`
   flex: 3;
+  display: flex;
+  flex-direction: column;
 `;
 const Title = styled.h1`
     font-size: 40px;
@@ -37,10 +39,12 @@ const Button = styled.button`
     margin-top: 20px;
     padding: 10px 30px;
     font-size: 20px;
+    width: 200px;
     border-radius: 10px;
     background-color: black;
     display: flex;
     justify-content: flex-start;
+  
     color: white;
     cursor: pointer;
     ${mobile({width:"100%", display:" inline-block",marginBottom:"50px" })}
