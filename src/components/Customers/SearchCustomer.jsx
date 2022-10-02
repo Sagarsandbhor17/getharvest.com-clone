@@ -1,10 +1,10 @@
 
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import {mobile } from "../integration/IntegrationResponsive"
 import { customerData } from './Customerdata'
 import CustomerBox from "./CustomerBox"
-const SearchCustomer = () => {
+
     const Container = styled.div`
     background-color: #fff8f1;
     width: 90%;
@@ -72,21 +72,30 @@ const FilterData = styled.div`
   /* background-color: crimson; */
 `;
 
+const SearchCustomer = () => {
+  const [data, setData] = useState(customerData)
+  
 
+  const filterItem = (catItem) =>{
+    const updatedItems = customerData.filter(ele =>(
+      ele.category === catItem
+    ))
+    setData(updatedItems)
+  }
   return (
     <Container>
                  <Head2>Find stories from teams like yours</Head2>
         <FilterContainer>
     <FilterCategory>
-      <Button>All industries</Button>
-      <Button>Architecture</Button>
-      <Button>Creative services</Button>
-      <Button>Engineering & design</Button>
-      <Button>Management consulting</Button>
-      <Button>Web development & IT</Button>
+      <Button onClick={() => setData(customerData)}>All industries</Button>
+      <Button onClick={() => filterItem("Architecture")}>Architecture</Button>
+      <Button onClick={() => filterItem("Creative services")}>Creative services</Button>
+      <Button onClick={() => filterItem("Engineering & design")}>Engineering & design</Button>
+      <Button onClick={() => filterItem("Management consulting")}>Management consulting</Button>
+      <Button onClick={() => filterItem("Web development & IT")}>Web development & IT</Button>
     </FilterCategory>
     <FilterData>
-      {customerData.map((item) => (
+    {data.map((item) => (
         <CustomerBox key={item.id} item={item} />
       ))}
     </FilterData>
