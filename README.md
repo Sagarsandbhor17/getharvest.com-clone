@@ -19,7 +19,7 @@ It will also create reports across projects monitor budgets etc..
 
 
 ### The loading page:
-It will just show a simple loading animation.
+It will just show a simple loading page.
 
 ![image](https://user-images.githubusercontent.com/103954186/193455270-a3b187de-92bd-41e0-ae0e-4f37db053522.png)
 
