@@ -16,7 +16,7 @@ const AppContext = ({children}) => {
       console.log("Login success", res.profileObj.name)
       setLoginButton(false)
       setLogoutButton(true)
-      navigate("/")
+      navigate("/Customers")
   }
 
   const onFailureSuccess = (res)=>{
