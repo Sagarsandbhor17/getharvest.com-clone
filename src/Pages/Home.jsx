@@ -113,26 +113,29 @@ return <div>
   <Box width='90%' justifySelf='left'>
     <VStack>
       <HStack gap='10px' className='featBox'>
-      <Stack><img src='https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/homepage/nav-time.svg' alt='ib' /></Stack>
-      <Stack className='feat'>
+      <Stack>
+        <img src='https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/homepage/nav-time.svg' alt='ib' /></Stack>
+      <Stack className='feat'><Link to='/Features' >
         <Text fontWeight='bold' fontSize='2xl' >Time Tracking</Text>
         <Text fontWeight='medium' fontSize='1xl' >Simple and intuitive time tracking your team will love.</Text>
-      </Stack>
+     </Link> </Stack>
       </HStack>
 
       <HStack gap='10px' className='featBox'>
       <Stack><img src='https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/homepage/nav-reporting.svg' alt='ib' /></Stack>
       <Stack className='feat'>
+      <Link to='/Features' >
         <Text fontWeight='bold' fontSize='2xl' >Reports & analysis</Text>
-        <Text fontWeight='medium' fontSize='1xl' >Unlock the insights that help your business thrive.</Text>
+        <Text fontWeight='medium' fontSize='1xl' >Unlock the insights that help your business thrive.</Text></Link>
       </Stack>
       </HStack>
 
       <HStack gap='10px' className='featBox'>
       <Stack><img src='https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/homepage/nav-invoicing.svg' alt='ib' /></Stack>
       <Stack className='feat'>
+      <Link to='/Features' >
         <Text fontWeight='bold' fontSize='2xl' >Invoicing & payments</Text>
-        <Text fontWeight='medium' fontSize='1xl' >Seamless invoicing and fast online payments.</Text>
+        <Text fontWeight='medium' fontSize='1xl' >Seamless invoicing and fast online payments.</Text></Link>
       </Stack>
       </HStack>
 
@@ -143,8 +146,8 @@ return <div>
   </Box>
 </SimpleGrid>
 <br/>
-<Box width="20%">
-<Button colorScheme='none' bg='black' padding='1.5rem' ml='2rem' >
+<Box width='20%'>
+<Button width="auto" colorScheme='none' bg='black' padding='1.5rem' ml='2rem' >
 <Link to="/Features" >Discover all features</Link>
 </Button></Box>
 </Box>
