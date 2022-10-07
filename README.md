@@ -3,7 +3,7 @@
 Through this app you can connect with different devices that will keep track of your projects, time, expenses etc.
 It will also keep track on group projects you took and missed.
 It will also create reports across projects monitor budgets etc..
-## https://harvestthala.netlify.app/
+## https://getharvest-clone.vercel.app/
 ## Tech stack :
 ### Frontend :
 - React
